@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neha Ingle | Software Engineer</title>
+<meta name="description" content="Neha Ingle: backend engineer building Spring Boot microservices and applied ML systems." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] } } } };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  .grad-text { background: linear-gradient(90deg, #34d399, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .card-hover { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(52,211,153,.45); box-shadow: 0 12px 40px -12px rgba(52,211,153,.25); }
+  .pulse-dot::before { content: ""; position: absolute; inset: 0; border-radius: 9999px; background: #34d399; animation: ping 1.8s cubic-bezier(0,0,.2,1) infinite; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-emerald-400 focus:text-zinc-950 focus:px-3 focus:py-2 focus:rounded">Skip to content</a>
+
+<!-- NAV -->
+<header class="fixed inset-x-0 top-0 z-40 backdrop-blur bg-zinc-950/70 border-b border-zinc-800/70">
+  <nav class="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between" aria-label="Primary">
+    <a href="#top" class="font-mono text-emerald-400 font-medium">&lt;neha /&gt;</a>
+    <ul class="hidden md:flex items-center gap-7 text-sm text-zinc-400">
+      <li><a class="hover:text-emerald-400 transition" href="#skills">Skills</a></li>
+      <li><a class="hover:text-emerald-400 transition" href="#projects">Projects</a></li>
+      <li><a class="hover:text-emerald-400 transition" href="#experience">Experience</a></li>
+      <li><a class="hover:text-emerald-400 transition" href="#contact">Contact</a></li>
+    </ul>
+    <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-zinc-800" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-800 px-5 py-3 space-y-3 text-sm">
+    <a class="block hover:text-emerald-400" href="#skills">Skills</a>
+    <a class="block hover:text-emerald-400" href="#projects">Projects</a>
+    <a class="block hover:text-emerald-400" href="#experience">Experience</a>
+    <a class="block hover:text-emerald-400" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="top" class="relative pt-32 pb-24 px-5">
+  <div class="absolute inset-0 -z-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 h-[480px] w-[480px] rounded-full bg-emerald-500/10 blur-3xl"></div>
+    <div class="absolute top-40 right-0 h-[320px] w-[320px] rounded-full bg-violet-500/10 blur-3xl"></div>
+  </div>
+  <div class="relative mx-auto max-w-6xl">
+    <div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300">
+      <span class="relative inline-block h-2 w-2 rounded-full bg-emerald-400"><span class="pulse-dot absolute inset-0 rounded-full"></span></span>
+      Available for full-time and internship roles
+    </div>
+    <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-50">
+      Neha Ingle
+    </h1>
+    <p class="mt-3 text-2xl sm:text-3xl font-semibold grad-text">Software Engineer &middot; Data Enthusiast</p>
+    <p class="mt-6 max-w-2xl text-lg text-zinc-400 leading-relaxed">
+      I build distributed backend systems with Spring Boot and Java, and I ship applied machine learning alongside them. Gateways, async messaging, JWT security, cloud deployment, and LLM integration.
+    </p>
+
+    <ul class="mt-8 flex flex-wrap gap-2" aria-label="Primary tech stack">
+      <li class="pill">Java</li><li class="pill">Spring Boot</li><li class="pill">Spring Cloud</li><li class="pill">Microservices</li>
+      <li class="pill">PostgreSQL</li><li class="pill">MongoDB</li><li class="pill">RabbitMQ</li><li class="pill">Keycloak</li><li class="pill">Python</li><li class="pill">XGBoost</li>
+    </ul>
+
+    <div class="mt-10 flex flex-wrap items-center gap-3">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="https://drive.google.com/file/d/1b8cJYW0LjfFylsqVXn8ylsc_9dpa5toa/view" target="_blank" rel="noopener noreferrer" class="btn-ghost" aria-label="Resume on Google Drive (opens in new tab)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7M10 14L21 3M21 14v7H3V3h7"/></svg>
+        View Resume
+      </a>
+      <a href="https://github.com/iwrite3" target="_blank" rel="noopener noreferrer" class="btn-ghost" aria-label="GitHub profile (opens in new tab)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        GitHub <span class="text-zinc-500">/iwrite3</span>
+      </a>
+      <a href="https://leetcode.com/ishouldcodeee" target="_blank" rel="noopener noreferrer" class="btn-ghost" aria-label="LeetCode profile (opens in new tab)">
+        LeetCode <span class="text-zinc-500">/ishouldcodeee</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-5 border-t border-zinc-900">
+  <div class="mx-auto max-w-6xl">
+    <p class="eyebrow">01 / Skills</p>
+    <h2 class="section-title">Technical skills</h2>
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      <article class="card card-hover">
+        <h3 class="card-title">Backend &amp; Distributed Systems</h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          <li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">Spring Cloud Gateway</li><li class="chip">Eureka</li><li class="chip">RabbitMQ</li><li class="chip">Keycloak (OAuth2)</li><li class="chip">JWT</li><li class="chip">Microservices</li><li class="chip">REST APIs</li><li class="chip">Jib</li>
+        </ul>
+      </article>
+      <article class="card card-hover">
+        <h3 class="card-title">Machine Learning &amp; Data</h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          <li class="chip">Python</li><li class="chip">XGBoost</li><li class="chip">Scikit-learn</li><li class="chip">Pandas</li><li class="chip">NumPy</li><li class="chip">EDA</li><li class="chip">Feature engineering</li><li class="chip">LLM APIs (Groq, Gemini, DeepSeek)</li>
+        </ul>
+      </article>
+      <article class="card card-hover">
+        <h3 class="card-title">Databases &amp; Caching</h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          <li class="chip">PostgreSQL</li><li class="chip">MongoDB</li><li class="chip">SQL</li><li class="chip">DBMS</li>
+        </ul>
+      </article>
+      <article class="card card-hover">
+        <h3 class="card-title">Tools &amp; Cloud</h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          <li class="chip">Git / GitHub</li><li class="chip">Google Cloud Run</li><li class="chip">Cloud Build</li><li class="chip">CI/CD</li><li class="chip">Postman</li><li class="chip">Streamlit</li><li class="chip">Linux</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 px-5 border-t border-zinc-900">
+  <div class="mx-auto max-w-6xl">
+    <p class="eyebrow">02 / Projects</p>
+    <h2 class="section-title">Featured projects</h2>
+
+    <div class="mt-10 grid gap-6">
+
+      <!-- Project 1 -->
+      <article class="card card-hover">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <span class="badge badge-emerald">Microservices &middot; Cloud</span>
+            <h3 class="mt-3 text-2xl font-bold text-zinc-50">FitTrack: AI-Powered Fitness Platform</h3>
+            <p class="mt-2 text-zinc-400 max-w-3xl">A Spring Boot microservices fitness app with a React frontend. It logs calories burned per workout, generates AI insights, and tracks calorie burn across day, week, and 30-day windows.</p>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://github.com/iwrite3/fittrack" target="_blank" rel="noopener noreferrer" class="btn-ghost btn-sm">GitHub</a>
+            <a href="https://share.google/YMErPm2pKS20dLhWX" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Live Demo</a>
+          </div>
+        </div>
+        <ul class="mt-6 space-y-3 text-zinc-300 text-sm leading-relaxed list-disc pl-5 marker:text-emerald-400">
+          <li><strong class="text-zinc-100">Architecture:</strong> Four services (API gateway, user, activity, AI) on Google Cloud Run, with PostgreSQL and MongoDB for storage and RabbitMQ for background processing.</li>
+          <li><strong class="text-zinc-100">Security:</strong> Keycloak (OAuth2 with PKCE) and JWT validation enforced at the Spring Cloud Gateway, so downstream services stay stateless.</li>
+          <li><strong class="text-zinc-100">Async AI pipeline:</strong> The AI service estimates calories through OpenRouter and generates personalised recommendations asynchronously, so the user-facing request does not block on the LLM.</li>
+          <li><strong class="text-zinc-100">Delivery:</strong> Containerised with Jib and built through Cloud Build. Moved service config to environment variables and fixed real deployment issues from logs: database auth, a Spring Boot 4 config rename, and Keycloak cold starts.</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">React</span><span class="chip">MongoDB</span><span class="chip">PostgreSQL</span><span class="chip">RabbitMQ</span><span class="chip">Cloud Run</span><span class="chip">Keycloak</span><span class="chip">OpenRouter</span>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card card-hover">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <span class="badge badge-violet">Backend &middot; LLM Integration</span>
+            <h3 class="mt-3 text-2xl font-bold text-zinc-50">Know My Meal: Nutrition Tracker</h3>
+            <p class="mt-2 text-zinc-400 max-w-3xl">A stateless RESTful Spring Boot backend that analyses nutrition in real time through the DeepSeek API, with a lightweight HTML and CSS front-end.</p>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://github.com/iwrite3/storemymeal" target="_blank" rel="noopener noreferrer" class="btn-ghost btn-sm">GitHub</a>
+            <a href="https://storemymeal.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Live Demo</a>
+          </div>
+        </div>
+        <ul class="mt-6 space-y-3 text-zinc-300 text-sm leading-relaxed list-disc pl-5 marker:text-violet-400">
+          <li><strong class="text-zinc-100">Stateless API design:</strong> Each request carries everything the server needs, so the service scales horizontally without session affinity.</li>
+          <li><strong class="text-zinc-100">Quota protection:</strong> Custom rate-limiting middleware (<code class="code">RateLimitInterceptor</code>, <code class="code">RateLimiterService</code>) blocks API abuse and protects the LLM quota from being exhausted.</li>
+          <li><strong class="text-zinc-100">Verification:</strong> Endpoints verified with Postman across the request and error paths.</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">REST</span><span class="chip">DeepSeek API</span><span class="chip">HTML / CSS</span>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card card-hover">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <span class="badge badge-emerald">Machine Learning &middot; Web App</span>
+            <h3 class="mt-3 text-2xl font-bold text-zinc-50">Bank Customer Churn Predictor &amp; Retention Insights</h3>
+            <p class="mt-2 text-zinc-400 max-w-3xl">An end-to-end churn pipeline on 10,000 bank customer records: EDA, feature engineering, an XGBoost classifier, and a Streamlit app that drafts retention strategies for high-risk customers.</p>
+          </div>
+          <div class="flex gap-2">
+            <a href="https://github.com/iwrite3/bankchurn" target="_blank" rel="noopener noreferrer" class="btn-ghost btn-sm">GitHub</a>
+            <a href="https://nehawebsite-shgqmddt438jrzcwusljdu.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Live Demo</a>
+          </div>
+        </div>
+        <ul class="mt-6 space-y-3 text-zinc-300 text-sm leading-relaxed list-disc pl-5 marker:text-emerald-400">
+          <li><strong class="text-zinc-100">EDA:</strong> Raw salary had near-zero correlation with churn, so I looked at relationships instead. Age separated churners from retained customers, and German customers churned at roughly twice the rate of French or Spanish customers.</li>
+          <li><strong class="text-zinc-100">Feature engineering:</strong> Built a <code class="code">BalanceSalaryRatio</code> feature to capture how much of a customer's income sits idle in deposits, a signal for rate-sensitive savers.</li>
+          <li><strong class="text-zinc-100">Model:</strong> XGBoost classifier (<code class="code">max_depth=5</code>, <code class="code">learning_rate=0.1</code>, 100 estimators) on an 80/20 split, reaching 86% accuracy. Accuracy alone is misleading on this 80/20 class split, so I prioritised recall and F1 in evaluation.</li>
+          <li><strong class="text-zinc-100">Deployment:</strong> Model serialised with joblib. The Streamlit app deploys from GitHub on Streamlit Community Cloud, and the Groq LLM API drafts retention strategies for high-risk customers.</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">Pandas</span><span class="chip">Streamlit</span><span class="chip">Groq API</span><span class="chip">joblib</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-24 px-5 border-t border-zinc-900">
+  <div class="mx-auto max-w-6xl">
+    <p class="eyebrow">03 / Experience &amp; Leadership</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      <article class="card card-hover">
+        <p class="text-xs font-mono text-emerald-400">Jun 2024 &ndash; Jul 2024</p>
+        <h3 class="mt-2 card-title">Software Development Trainee</h3>
+        <p class="text-zinc-500 text-sm">Anveshan Foundation, IGDTUW &middot; New Delhi</p>
+        <ul class="mt-4 space-y-2 text-sm text-zinc-300 list-disc pl-5 marker:text-emerald-400">
+          <li>Developed, tested, and debugged scalable Spring Boot microservices using Spring Cloud Gateway, Eureka, and RabbitMQ, with API testing in Postman.</li>
+          <li>Integrated Gemini and DeepSeek LLM APIs using custom rate-limiting middleware and non-blocking WebClient pipelines to optimise quota usage.</li>
+        </ul>
+      </article>
+      <article class="card card-hover">
+        <p class="text-xs font-mono text-violet-400">Leadership</p>
+        <h3 class="mt-2 card-title">Head Coordinator, Taarangana Cultural Fest</h3>
+        <p class="text-zinc-500 text-sm">IGDTUW</p>
+        <ul class="mt-4 space-y-2 text-sm text-zinc-300 list-disc pl-5 marker:text-violet-400">
+          <li>Led a team of 8 to plan and execute events attended by 300+ people.</li>
+          <li>Coordinated across the team on planning and execution, sharpening communication and collaboration.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="mt-5 card">
+      <p class="text-xs font-mono text-zinc-500">Aug 2023 &ndash; Jul 2027 (expected)</p>
+      <h3 class="mt-2 card-title">B.Tech, Artificial Intelligence &amp; Machine Learning</h3>
+      <p class="text-zinc-500 text-sm">Indira Gandhi Delhi Technical University for Women &middot; CGPA 8.12/10</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-5 border-t border-zinc-900">
+  <div class="mx-auto max-w-3xl text-center">
+    <p class="eyebrow">04 / Contact</p>
+    <h2 class="section-title">Let's build something</h2>
+    <p class="mt-4 text-zinc-400">Open to full-time and internship roles, especially backend, distributed systems, and applied ML. Reach out and I'll reply.</p>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-stretch justify-center gap-3">
+      <button id="copyEmail" type="button" class="btn-primary justify-center" aria-live="polite">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copy email
+      </button>
+      <a href="mailto:nehaaaworks@gmail.com" class="btn-ghost justify-center">nehaaaworks@gmail.com</a>
+    </div>
+
+    <ul class="mt-10 flex justify-center gap-6 text-sm text-zinc-400">
+      <li><a class="hover:text-emerald-400 transition" href="https://www.linkedin.com/in/nehaaaingle/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a class="hover:text-emerald-400 transition" href="https://github.com/iwrite3" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a class="hover:text-emerald-400 transition" href="https://leetcode.com/ishouldcodeee" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-zinc-900 py-8 px-5 text-center text-xs text-zinc-600">
+  &copy; <span id="year"></span> Neha Ingle. Built with HTML, Tailwind CSS, and vanilla JavaScript.
+</footer>
+
+<!-- Toast -->
+<div id="toast" role="status" class="pointer-events-none fixed bottom-6 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 transition-all duration-300 rounded-lg bg-emerald-400 text-zinc-950 px-4 py-2 text-sm font-medium shadow-lg">
+  Email copied to clipboard
+</div>
+
+<style>
+  .pill { @apply rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs text-zinc-300; }
+  .btn-primary { @apply inline-flex items-center gap-2 rounded-lg bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-zinc-950 hover:bg-emerald-300 hover:-translate-y-0.5 transition; }
+  .btn-ghost { @apply inline-flex items-center gap-2 rounded-lg border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-300 hover:-translate-y-0.5 transition; }
+  .btn-sm { @apply px-3.5 py-2 text-xs; }
+  .eyebrow { @apply font-mono text-xs uppercase tracking-widest text-emerald-400; }
+  .section-title { @apply mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50; }
+  .card { @apply rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 sm:p-7; }
+  .card-title { @apply text-lg font-semibold text-zinc-100; }
+  .chip { @apply rounded-md border border-zinc-800 bg-zinc-950 px-2.5 py-1 text-xs text-zinc-300; }
+  .badge { @apply inline-block rounded-full px-3 py-1 text-xs font-medium; }
+  .badge-emerald { @apply bg-emerald-400/10 text-emerald-300 border border-emerald-400/30; }
+  .badge-violet { @apply bg-violet-400/10 text-violet-300 border border-violet-400/30; }
+  .code { @apply rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-xs text-emerald-300; }
+</style>
+
+<script>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Copy email with fallback, plus toast
+  const EMAIL = 'nehaaaworks@gmail.com';
+  const toast = document.getElementById('toast');
+  let toastTimer;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 2200);
+  }
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (_) { /* fall through */ }
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (_) {}
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.getElementById('copyEmail').addEventListener('click', async (e) => {
+    const ok = await copyText(EMAIL);
+    showToast(ok ? 'Email copied to clipboard' : 'Copy failed. Email: ' + EMAIL);
+    e.currentTarget.querySelector('svg').nextSibling.textContent = ok ? ' Copied!' : ' Copy email';
+  });
+</script>
+</body>
+</html>
